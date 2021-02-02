@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Start meta tags -->
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="img/icon.png">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- End meta tags -->
+	<!-- Start CSS links -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Leckerli+One" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <!-- End CSS links -->
+
+      <title>Participants Recruitment</title>
+  </head>
+
+  <body id="page">
+  
+    <!-- Start header -->
+    <div class='stars'>
+  <div class='twinkling'>
+
+  </div>
+</div>
+    <section>
+    <nav>
+      <a href="http://engbreak19.com/"><img src="img/engbreak_logo.png" alt="engbreak_logo" /></a>
+</nav>
+	<div class="bg-contact2">
+		<div class="container-contact2">
+			<div class="wrap-contact2">
+			<form class="contact2-form validate-form" id="registrationForm" onsubmit="return validData();">
+				<a href="index.php"><span class="close">&times;</span></a>
+					<span class="contact2-form-title">
+						Registration Form
+					</span>
+
+					<div class="wrap-input2 validate-input">
+					<input class="input2" type="text"  name="name" required />
+						<span class="focus-input2" data-placeholder="Full Name"></span>
+					</div>
+					<div class="wrap-input2 validate-input">
+					<input type="number" onkeyup="valid(this);check(this)" onkeypress="return isNumber(event)" class="input2"    name="number" required />
+						<span class="focus-input2" data-placeholder="Phone Number"></span>
+					</div>
+					<div class="wrap-input2 validate-input">
+					<input type="email" class="input2"        name="email"  required />
+						<span class="focus-input2" data-placeholder="Email"></span>
+					</div>
+					<div class="wrap-input2 validate-input">
+					<input type="text" class="input2"        name="faculty"  required />
+						<span class="focus-input2" data-placeholder="Faculty"></span>
+					</div>
+					<div class="wrap-input2 validate-input">
+					<input type="text"  class="input2"    name="university"    required />
+						<span class="focus-input2" data-placeholder="University"></span>
+					</div>
+					<div class="wrap-input2 validate-input">
+					<select id='ws1' name="workshop1" class="input2" required>
+					<option value="" hidden selected></option>
+					<optgroup label="Engineering">
+						<option value="Web Design">Web Design</option>
+						<option value="Arduino">Arduino</option>
+					</optgroup>
+					<optgroup label="Management">
+						<option value="Entrepreneurship">Entrepreneurship</option>
+						<option value="Human Resources">Human Resources</option>
+						<option value="Promotion">Promotion</option>
+					</optgroup>
+					<optgroup label="Designing">
+						<option value="Illustrator">Illustrator</option>
+						<option value="Photoshop">Photoshop</option>
+					</optgroup>
+					<optgroup label="Presenting">
+						<option value="Video Production">Video Production</option>
+					</optgroup>
+				</select>
+						<span class="focus-input2" data-placeholder="First Preference"></span>
+					</div>
+					<div class="wrap-input2 validate-input">
+					<select id='ws2' name="workshop2" class="input2" required>
+					<option value="" hidden selected></option>
+					<optgroup label="Engineering">
+						<option value="Web Design">Web Design</option>
+						<option value="Arduino">Arduino</option>
+					</optgroup>
+					<optgroup label="Management">
+						<option value="Entrepreneurship">Entrepreneurship</option>
+						<option value="Human Resources">Human Resources</option>
+						<option value="Promotion">Promotion</option>
+					</optgroup>
+					<optgroup label="Designing">
+						<option value="Illustrator">Illustrator</option>
+						<option value="Photoshop">Photoshop</option>
+					</optgroup>
+					<optgroup label="Presenting">
+						<option value="Video Production">Video Production</option>
+					</optgroup>
+				</select>
+						<span class="focus-input2" data-placeholder="Second Preference"></span>
+					</div>
+					<span class="full note">*Notice that: You should choose two preferences, but you'll be able to attend only one workshop.</span>
+					<div class="wrap-input2 validate-input">
+					<select name="academicYear" class="input2" required>
+			<option value="" disabled selected></option>
+			<option value="Preparatory">Preparatory</option>
+			<option value="First">First</option>
+			<option value="Second">Second</option>
+			<option value="Third">Third</option>
+			<option value="Fourth">Fourth</option>
+			<option value="Fifth">Fifth</option>
+		</select>
+			<span class="focus-input2" data-placeholder="Academic Year"></span>
+					</div>
+					<div class="wrap-input2 validate-input">
+						<textarea class="input2" name="reasonsForApplying" required></textarea>
+						<span class="focus-input2" data-placeholder="Reasons For Applying"></span>
+					</div>
+					<div class="container-contact2-form-btn">
+					<p class="sponsor_Qus">Are you interested in Engineering paid courses like (3d max, ethical hacker and CHFI v8) by our sponsor CLS 
+					<br><b>"If you press Yes you will recieve a mail with CLS courses and offers"</b>
+
+					<div class="wrap-input2 validate-input">
+					
+					<label for="yes">Yes</label>
+					<input id="yes" type="radio" name="sponsor" value="yes" required>
+					<label for="no">No</label>
+					<input id="no" type="radio" name="sponsor" value="no" required>
+					</div></div>
+					<p class="iq_note">IQ test will be next Friday and Saturday from 10:00AM to 4:00PM at <a href="https://www.facebook.com/CadresMakers/" target="_blank">Cadres Makers</a><br><span>"59 iran street,5th floor, Dokki"</span></p>
+						<div class="container-contact2-form-btn">
+							<input  name="submit" type="submit" class="contact2-form-btn" value="Submit">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+  
+</section>
+	<!-- Start JS links -->
+	<script src="js/jquery.min.js"></script>
+	<script>
+    	function check(input) {
+           if ((input.value <= 01000000000)||(input.value >= 01599999999)) {
+             input.setCustomValidity('Enter your phone number correctly');
+           } else {
+             // input is fine -- reset the error message
+             input.setCustomValidity('');
+           }
+         }
+	    function isNumber(evt) {
+            evt = (evt) ? evt : window.event;
+            var charCode = (evt.which) ? evt.which : evt.keyCode;
+            if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                return false;
+            }
+            return true;
+        }
+        function valid(f) {
+            var re = /^[\d]*$/;
+            if (!re.test(f.value)) {
+                f.value = f.value.replace(/[^\d]/g,"");
+            }
+        } 
+		// Disable scroll when focused on a number input.
+		$('form').on('focus', 'input[type=number]', function(e) {
+        $(this).on('wheel', function(e) {
+            e.preventDefault();
+        });
+		});
+	
+		// Restore scroll on number inputs.
+		$('form').on('blur', 'input[type=number]', function(e) {
+			$(this).off('wheel');
+		});
+	
+		// Disable up and down keys.
+		$('form').on('keydown', 'input[type=number]', function(e) {
+			if ( e.which == 38 || e.which == 40 )
+				e.preventDefault();
+		});
+	</script>
+</body>
+</html>
